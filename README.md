@@ -1,16 +1,7 @@
-# Parcial-Programaci-n-para-Seguridad-Inform-tica-
+El grupo 2, escriba un script en PowerShell que automatice la revisión del estado de la red aplicando bucles y condicionales:
+Utiliza un ciclo repetitivo que se repita exactamente 3 veces para simular intentos de verificación.
+En cada iteración del bucle, ejecuta el cmdlet para obtener los adaptadores de red activos.
+Muestra la fecha y hora exacta de cada verificación.
+Integra una estructura condicional dentro del ciclo para evaluar si el número de la iteración es par o impar, mostrando un mensaje descriptivo distinto en cada caso.
+Al finalizar el bucle, imprime un mensaje final por consola que indique que el monitoreo ha concluido con éxito.
 
-for ($i = 1; $i -le 3; $i++) {
-    $fecha = Get-Date
-
-    if ($i % 2 -eq 0) {
-        Write-Host "Iteración $i (Par): Verificación secundaria de red a las $fecha" -ForegroundColor Cyan
-    } else {
-        Write-Host "Iteración $i (Impar): Diagnóstico principal de adaptadores a las $fecha" -ForegroundColor Yellow
-    }
-
-    Get-NetAdapter | Where-Object Status -eq 'Up'
-    Write-Host "--------------------------------------------------"
-}
-
-Write-Host "El monitoreo ha concluido con éxito." -ForegroundColor Green
