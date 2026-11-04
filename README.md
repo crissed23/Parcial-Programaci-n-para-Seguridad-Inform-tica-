@@ -5,3 +5,4 @@ Muestra la fecha y hora exacta de cada verificación.
 Integra una estructura condicional dentro del ciclo para evaluar si el número de la iteración es par o impar, mostrando un mensaje descriptivo distinto en cada caso.
 Al finalizar el bucle, imprime un mensaje final por consola que indique que el monitoreo ha concluido con éxito.
 
+<img width="935" height="723" alt="powershell_ycpRXzlksj" src="https://github.com/user-attachments/assets/26950edf-9706-40be-9162-6867d0843ace" />
